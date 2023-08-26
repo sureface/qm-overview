@@ -1,0 +1,103 @@
+@import url('qm-main-root-vars.css');
+
+.qm-container {
+    padding: 20px;
+}
+.qm-bookedInfo-status {
+    background: #FFD6A7 !important;
+    color: var(--bs-secondary);
+}
+.qm-bookedInfo {
+    border-radius: 3px;
+    border: 1px solid var(--light-gray, #C5C5C5);
+    background: #FFF;
+    padding: 5px;
+}
+.qm-bookedInfo:not(:last-child) {
+    margin-bottom: 5px;
+}
+.qm-bookedInfo-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 10px;
+    border-right: 1px solid var(--bs-gray-lighter);
+}
+.qm-bookedInfo-cost {
+    color: var(--bs-secondary);
+    font-family: Open Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 19.6px */
+    text-transform: capitalize;
+}
+.qm-bookedInfo-mi {
+    color: var(----bs-gray-dark);
+    font-family: Open Sans;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 16.8px */
+}
+.qm-bookedInfo-right {
+    flex-grow: 1;
+}
+.qm-bookedInfo-title {
+    color: var(--black, #000);
+    font-family: Open Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 19.6px */
+    text-transform: capitalize;
+}
+.qm-bookedInfo-date {
+    color: var(--dark-gray, #717171);
+    font-family: Open Sans;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 16.8px */
+    text-transform: capitalize;
+}
+.qm-bookedInfo-line {
+    position: relative;
+    height: 36px;
+    width: 1.5px;
+    background: var(--bs-gray-lighter);
+    margin-left: 11px;
+    margin-right: 11px;
+}
+.qm-bookedInfo-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -3px;
+    width: 7px;
+    height: 7px;
+    background-color: var(--bs-gray-lighter);
+    transform: rotate(45deg);
+}
+.qm-bookedInfo-line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+    width: 9px;
+    height: 9px;
+    background-color: var(--bs-gray-lighter);
+    border-radius: 50%;
+}
+.qm-bookedInfo-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+    cursor: pointer;
+}
